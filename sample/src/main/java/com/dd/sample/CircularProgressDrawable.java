@@ -1,4 +1,4 @@
-package com.dd;
+package com.dd.sample;
 
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;

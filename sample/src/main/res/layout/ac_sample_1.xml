@@ -1,32 +1,46 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.dd.sample.CircularProgressButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circularButton1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="32dp"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp">
 
-    <com.dd.CircularProgressButton
-        android:id="@+id/circularButton1"
-        android:layout_width="196dp"
-        android:layout_height="64dp"
-        android:textColor="@color/cpb_white"
-        android:textSize="18sp"
-        app:cpb_cornerRadius="48dp"
-        app:cpb_iconComplete="@drawable/ic_action_accept"
-        app:cpb_iconError="@drawable/ic_action_cancel"
-        app:cpb_textIdle="@string/Upload" />
+  <LinearLayout
+      android:id="@+id/root"
+      android:layout_width="320dp"
+      android:layout_height="40dp"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal">
 
-    <com.dd.CircularProgressButton
-        android:id="@+id/circularButton2"
-        android:layout_width="196dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="16dp"
-        android:textColor="@color/cpb_white"
-        android:textSize="18sp"
-        app:cpb_cornerRadius="48dp"
-        app:cpb_iconComplete="@drawable/ic_action_accept"
-        app:cpb_iconError="@drawable/ic_action_cancel"
-        app:cpb_textIdle="@string/Upload" />
+    <ImageView
+        android:id="@+id/iv_store_list_refresh_location"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:src="@drawable/ico_location"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_store_list_located_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="正在定位..."
+        android:textColor="#DF3348"
+        android:textSize="14sp"/>
+  </LinearLayout>
+</com.dd.sample.CircularProgressButton>

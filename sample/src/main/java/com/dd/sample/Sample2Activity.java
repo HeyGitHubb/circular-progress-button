@@ -1,7 +1,5 @@
 package com.dd.sample;
 
-import com.dd.CircularProgressButton;
-
 import android.animation.ValueAnimator;
 import android.app.ActionBar;
 import android.app.Activity;
