@@ -27,8 +27,6 @@ public class Sample1Activity extends Activity {
         }
 
         final CircularProgressButton circularButton1 = (CircularProgressButton) findViewById(R.id.circularButton1);
-        View content = findViewById(R.id.root);
-        circularButton1.setViewContent(content);
         circularButton1.setIndeterminateProgressMode(true);
         circularButton1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,9 +25,6 @@ class MorphingAnimation {
 
     private float mFromCornerRadius;
     private float mToCornerRadius;
-
-    private float mPadding;
-
     private View mViewRoot, mViewContent;
     private GradientDrawable mDrawableRoot;
 
@@ -70,11 +67,6 @@ class MorphingAnimation {
 
     public void setToCornerRadius(float toCornerRadius) {
         mToCornerRadius = toCornerRadius;
-    }
-
-    public void setPadding(float padding) {
-        Log.e(">>>>", ">>>> setPadding padding: " + padding);
-        mPadding = padding;
     }
 
     public void start() {
